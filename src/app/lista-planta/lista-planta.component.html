@@ -1,0 +1,17 @@
+<div>
+  <h2>Listado de Plantas</h2>
+  <ul>
+    @for (planta of plantas; track planta.id) {
+    <li>
+      <h2>{{ planta.nombre }} {{ planta.tipo }}</h2>
+      @if (planta.favorito) {
+      <span>★</span>
+      }
+      <button (click)="addFav(planta.id)">
+        {{ planta.favorito ? "Quitar de Favoritos" : "Añadir a Favoritos" }}
+      </button>
+      <button (click)="borrarPlanta(planta.id)">Eliminar Planta</button>
+    </li>
+    }
+  </ul>
+</div>

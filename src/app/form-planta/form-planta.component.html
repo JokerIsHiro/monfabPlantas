@@ -1,0 +1,18 @@
+<div>
+  <form action="">
+    <label for="plantaNombre">Nombre</label>
+    <input
+      type="text"
+      name="plantaNombre"
+      [(ngModel)]="nombre"
+      placeholder="Introduzca el nombre de la planta"
+    />
+
+    <div>
+      <label for="plantaTipo">Elija el tipo de planta</label>
+      <label><input type="radio" name="tipo" [(ngModel)]="tipo" value="Arbusto" />Arbusto</label>
+      <label><input type="radio" name="tipo" [(ngModel)]="tipo" value="Arbol" />Arbol</label>
+    </div>
+    <button (click)="guardarPlanta()">Añadir Planta</button>
+  </form>
+</div>

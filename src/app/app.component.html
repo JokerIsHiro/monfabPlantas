@@ -1,0 +1,6 @@
+<div class="container">
+  <app-form-planta
+    (plantaGuardada)="plantas.push($event)"
+  ></app-form-planta>
+  <app-lista-planta [plantas]="plantas"></app-lista-planta>
+</div>

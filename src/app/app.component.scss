@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between form and list */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add spacing between components */
+    padding: 20px;
+  }
+  
+  app-form {
+    flex: 1; /* Form takes up equal space */
+    max-width: 300px; /* Limit form width */
+  }
+  
+  app-list {
+    flex: 2; /* List takes up more space */
+  }
